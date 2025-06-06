@@ -1,0 +1,1688 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="PhotoStyle - עמדות צילום לאירועים. עמדות פתוחות, סגורות, 360° ומראה. חווית צילום מושלמת לכל אירוע.">
+    <meta name="keywords" content="פוטובות', עמדת צילום, אירועים, חתונה, בר מצווה, יום הולדת, פוטובות', צילום אירועים">
+    <meta name="author" content="PhotoStyle">
+    <meta property="og:title" content="PhotoStyle - עמדות צילום לאירועים">
+    <meta property="og:description" content="חווית צילום מושלמת לכל אירוע. עמדות פתוחות, סגורות, 360° ומראה.">
+    <meta property="og:image" content="373633205_3677849595779188_4373545327199839411_n.jpg">
+    <meta property="og:url" content="https://photostyle.co.il">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="PhotoStyle - עמדות צילום לאירועים">
+    <meta name="twitter:description" content="חווית צילום מושלמת לכל אירוע. עמדות פתוחות, סגורות, 360° ומראה.">
+    <meta name="twitter:image" content="373633205_3677849595779188_4373545327199839411_n.jpg">
+    <link rel="icon" type="image/x-icon" href="373633205_3677849595779188_4373545327199839411_n.jpg">
+    <title>PhotoStyle - עמדות צילום לאירועים</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Arimo:wght@400;700&family=Secular+One&display=swap');
+        
+        body {
+            font-family: 'Arimo', sans-serif;
+            background-color: #faf9f6;
+            direction: rtl;
+            scroll-behavior: smooth;
+        }
+        
+        h1, h2, h3, h4 {
+            font-family: 'Secular One', sans-serif;
+        }
+        
+        .hero-gradient {
+            background: linear-gradient(135deg, #FB37FF 0%, #18B2DE 100%);
+        }
+        
+        .testimonial-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+        
+        .booth-card:hover .booth-overlay {
+            opacity: 1;
+        }
+        
+        .booth-overlay {
+            transition: opacity 0.3s ease;
+        }
+
+        .whatsapp-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background-color: #25D366;
+            color: white;
+            padding: 12px 24px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            margin-top: 20px;
+        }
+
+        .whatsapp-button:hover {
+            background-color: #128C7E;
+            transform: translateY(-2px);
+        }
+
+        .whatsapp-button i {
+            font-size: 24px;
+        }
+
+        .logo {
+            font-size: 1.6rem;
+            font-weight: 700;
+            color: #fff;
+            text-decoration: none;
+            font-family: 'Montserrat', sans-serif;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            background: linear-gradient(135deg, #FF3366 0%, #FF6B6B 50%, #FFD93D 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+            position: relative;
+            padding: 0.3rem 0.8rem;
+            transition: all 0.3s ease;
+            display: inline-block;
+        }
+
+        .logo:hover {
+            transform: translateY(-1px);
+            text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.15);
+            background: linear-gradient(135deg, #FFD93D 0%, #FF6B6B 50%, #FF3366 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .logo::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            width: 0;
+            height: 1.5px;
+            background: linear-gradient(90deg, #FF3366, #FF6B6B, #FFD93D);
+            transition: all 0.3s ease;
+            transform: translateX(-50%);
+            border-radius: 1px;
+        }
+
+        .logo:hover::after {
+            width: 85%;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+
+        nav {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul {
+            display: flex;
+            gap: 2rem;
+            justify-content: center;
+            align-items: center;
+        }
+
+        nav ul li a {
+            position: relative;
+            color: #333;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 1.2rem;
+            padding: 0.6rem 1.2rem;
+            transition: all 0.3s ease;
+            border-radius: 8px;
+        }
+
+        nav ul li a:hover {
+            color: #ff6b6b;
+            background: rgba(255, 107, 107, 0.1);
+            transform: translateY(-2px);
+            font-weight: 600;
+        }
+
+        @media (max-width: 768px) {
+            nav ul li a {
+                font-size: 1.1rem;
+                padding: 0.5rem 1rem;
+            }
+        }
+
+        nav ul li a::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            width: 0;
+            height: 2px;
+            background: linear-gradient(90deg, #ff6b6b, #ffd93d);
+            transition: all 0.3s ease;
+            transform: translateX(-50%);
+            border-radius: 2px;
+        }
+
+        nav ul li a:hover::after {
+            width: 80%;
+        }
+
+        nav ul li a.active {
+            color: #ff6b6b;
+            background: rgba(255, 107, 107, 0.1);
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        nav ul li {
+            animation: fadeIn 0.5s ease forwards;
+            opacity: 0;
+        }
+
+        nav ul li:nth-child(1) { animation-delay: 0.1s; }
+        nav ul li:nth-child(2) { animation-delay: 0.2s; }
+        nav ul li:nth-child(3) { animation-delay: 0.3s; }
+        nav ul li:nth-child(4) { animation-delay: 0.4s; }
+        nav ul li:nth-child(5) { animation-delay: 0.5s; }
+        nav ul li:nth-child(6) { animation-delay: 0.6s; }
+
+        .image-container {
+            position: relative;
+            overflow: hidden;
+            border-radius: 8px;
+            background: #f3f4f6;
+        }
+
+        .image-container img {
+            transition: opacity 0.3s ease;
+        }
+
+        .image-container img.loading {
+            opacity: 0;
+        }
+
+        .image-container::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(90deg, #f3f4f6 0%, #e5e7eb 50%, #f3f4f6 100%);
+            background-size: 200% 100%;
+            animation: loading 1.5s infinite;
+        }
+
+        @keyframes loading {
+            0% { background-position: 200% 0; }
+            100% { background-position: -200% 0; }
+        }
+
+        .error-message {
+            display: none;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #666;
+            text-align: center;
+            padding: 1rem;
+        }
+
+        .image-container.error::before {
+            display: none;
+        }
+
+        .image-container.error .error-message {
+            display: block;
+        }
+
+        .contact-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: linear-gradient(135deg, #FF3366 0%, #FF6B6B 100%);
+            color: white;
+            padding: 1rem 2rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(255, 51, 102, 0.2);
+            margin: 2rem auto;
+        }
+
+        .contact-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(255, 51, 102, 0.3);
+            background: linear-gradient(135deg, #FF6B6B 0%, #FF3366 100%);
+        }
+
+        .contact-button i {
+            font-size: 1.3rem;
+        }
+
+        .contact-button-container {
+            text-align: center;
+            margin: 3rem 0;
+        }
+
+        /* Back to Top Button */
+        .back-to-top {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            background: linear-gradient(45deg, #db2777, #ec4899);
+            color: white;
+            width: 3rem;
+            height: 3rem;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+            z-index: 1000;
+            box-shadow: 0 4px 15px rgba(219, 39, 119, 0.2);
+        }
+
+        .back-to-top.visible {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .back-to-top:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(219, 39, 119, 0.3);
+        }
+
+        /* Section Transitions */
+        .section {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.6s ease-out;
+        }
+
+        .section.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Gallery Hover Effects */
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 12px;
+            transition: all 0.3s ease;
+        }
+
+        .gallery-item:hover {
+            transform: scale(1.02);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+        }
+
+        .gallery-overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to top, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0) 100%);
+            opacity: 0;
+            transition: all 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            padding: 20px;
+            color: white;
+        }
+
+        .gallery-item:hover .gallery-overlay {
+            opacity: 1;
+        }
+
+        .gallery-title {
+            transform: translateY(20px);
+            transition: all 0.3s ease;
+        }
+
+        .gallery-item:hover .gallery-title {
+            transform: translateY(0);
+        }
+
+        /* Pricing Card Interactions */
+        .pricing-card {
+            transition: all 0.3s ease;
+        }
+
+        .pricing-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .pricing-feature {
+            transition: all 0.3s ease;
+        }
+
+        .pricing-card:hover .pricing-feature {
+            transform: translateX(5px);
+        }
+
+        /* Improved Color Contrast */
+        .text-gray-600 {
+            color: #4B5563 !important;
+        }
+
+        .text-gray-400 {
+            color: #6B7280 !important;
+        }
+
+        .bg-gray-50 {
+            background-color: #F9FAFB !important;
+        }
+
+        /* Error Handling Styles */
+        .error-boundary {
+            padding: 20px;
+            margin: 20px;
+            border: 1px solid #EF4444;
+            border-radius: 8px;
+            background-color: #FEE2E2;
+            color: #991B1B;
+        }
+
+        .error-boundary h2 {
+            color: #7F1D1D;
+            margin-bottom: 10px;
+        }
+
+        .error-boundary button {
+            background-color: #EF4444;
+            color: white;
+            padding: 8px 16px;
+            border-radius: 4px;
+            margin-top: 10px;
+        }
+
+        /* Cache Control */
+        .cached-content {
+            will-change: transform;
+            backface-visibility: hidden;
+        }
+
+        .gallery-overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to top, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0) 100%);
+            opacity: 0;
+            transition: all 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            padding: 20px;
+            color: white;
+        }
+
+        .gallery-item:hover .gallery-overlay {
+            opacity: 1;
+        }
+
+        .gallery-title {
+            transform: translateY(20px);
+            transition: all 0.3s ease;
+        }
+
+        .gallery-item:hover .gallery-title {
+            transform: translateY(0);
+        }
+
+        /* Pricing Card Interactions */
+        .pricing-card {
+            transition: all 0.3s ease;
+        }
+
+        .pricing-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .pricing-feature {
+            transition: all 0.3s ease;
+        }
+
+        .pricing-card:hover .pricing-feature {
+            transform: translateX(5px);
+        }
+
+        /* Improved Color Contrast */
+        .text-gray-600 {
+            color: #4B5563 !important;
+        }
+
+        .text-gray-400 {
+            color: #6B7280 !important;
+        }
+
+        .bg-gray-50 {
+            background-color: #F9FAFB !important;
+        }
+
+        /* Error Handling Styles */
+        .error-boundary {
+            padding: 20px;
+            margin: 20px;
+            border: 1px solid #EF4444;
+            border-radius: 8px;
+            background-color: #FEE2E2;
+            color: #991B1B;
+        }
+
+        .error-boundary h2 {
+            color: #7F1D1D;
+            margin-bottom: 10px;
+        }
+
+        .error-boundary button {
+            background-color: #EF4444;
+            color: white;
+            padding: 8px 16px;
+            border-radius: 4px;
+            margin-top: 10px;
+        }
+
+        /* Cache Control */
+        .cached-content {
+            will-change: transform;
+            backface-visibility: hidden;
+        }
+
+        /* Gallery Item Styles */
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 1rem;
+            cursor: pointer;
+        }
+
+        .gallery-item img {
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.1);
+        }
+
+        .gallery-overlay {
+            position: absolute;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.6);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 1rem;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .gallery-item:hover .gallery-overlay {
+            opacity: 1;
+        }
+
+        .gallery-title {
+            color: white;
+            text-align: center;
+            margin-bottom: 0.5rem;
+        }
+
+        .gallery-overlay p {
+            color: white;
+            text-align: center;
+        }
+
+        /* Add placeholder styles */
+        .image-placeholder {
+            background: linear-gradient(45deg, #f3f4f6, #e5e7eb);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #6b7280;
+            font-size: 0.875rem;
+        }
+
+        /* Logo specific styles */
+        .logo-container {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            min-height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .logo-container img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+        }
+
+        .logo-container.error::after {
+            content: 'Logo';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #6b7280;
+            font-size: 0.875rem;
+        }
+
+        /* Navigation Styles */
+        .nav-link {
+            position: relative;
+            padding: 0.5rem 1rem;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: 0;
+            left: 50%;
+            background-color: #db2777;
+            transition: all 0.3s ease;
+            transform: translateX(-50%);
+        }
+
+        .nav-link:hover::after {
+            width: 100%;
+        }
+
+        .nav-link.active {
+            color: #db2777;
+        }
+
+        .nav-link.active::after {
+            width: 100%;
+        }
+
+        .contact-nav-btn {
+            background: linear-gradient(45deg, #db2777, #ec4899);
+            box-shadow: 0 4px 15px rgba(219, 39, 119, 0.2);
+            transition: all 0.3s ease;
+        }
+
+        .contact-nav-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(219, 39, 119, 0.3);
+        }
+
+        /* Mobile Menu Improvements */
+        .mobile-menu {
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            background-color: rgba(255, 255, 255, 0.95);
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+            z-index: 50;
+            padding: 1rem;
+            max-height: 100vh;
+            overflow-y: auto;
+        }
+
+        /* Mobile Responsive Improvements */
+        @media (max-width: 768px) {
+            /* Header & Navigation */
+            .header {
+                padding: 0.5rem 1rem;
+            }
+
+            .logo {
+                max-width: 100px;
+            }
+
+            .logo-text {
+                font-size: 0.9rem !important;
+                margin-right: 0.25rem;
+            }
+
+            .mobile-menu-button {
+                padding: 0.5rem;
+                width: 40px;
+                height: 40px;
+            }
+
+            .mobile-menu-button svg {
+                width: 24px;
+                height: 24px;
+            }
+
+            /* Hero Section */
+            .hero {
+                padding: 2rem 1rem;
+                text-align: center;
+                margin-top: 60px;
+            }
+
+            .hero h1 {
+                font-size: 1.8rem;
+                margin-bottom: 1rem;
+                line-height: 1.3;
+            }
+
+            .hero p {
+                font-size: 1rem;
+                margin-bottom: 1.5rem;
+                line-height: 1.5;
+            }
+
+            .hero-buttons {
+                flex-direction: column;
+                gap: 0.75rem;
+            }
+
+            .hero-buttons a {
+                width: 100%;
+                text-align: center;
+                padding: 0.75rem 1rem;
+                font-size: 0.95rem;
+            }
+
+            /* Booths Section */
+            .booth-card {
+                padding: 1rem;
+                margin: 0.5rem;
+            }
+
+            .booth-card h3 {
+                font-size: 1.3rem;
+                margin-bottom: 0.5rem;
+            }
+
+            .booth-card p {
+                font-size: 0.95rem;
+                line-height: 1.5;
+            }
+
+            /* Gallery */
+            .gallery-grid {
+                grid-template-columns: repeat(1, 1fr);
+                gap: 0.75rem;
+                padding: 0.75rem;
+            }
+
+            .gallery-item {
+                aspect-ratio: 1;
+                border-radius: 8px;
+            }
+
+            /* FAQ Section */
+            .faq-item {
+                padding: 0.75rem;
+                margin-bottom: 0.5rem;
+            }
+
+            .faq-question {
+                font-size: 1rem;
+                padding: 0.75rem;
+            }
+
+            .faq-answer {
+                font-size: 0.95rem;
+                padding: 0.75rem;
+            }
+
+            /* Contact Section */
+            .contact-grid {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+                padding: 0.75rem;
+            }
+
+            .contact-info {
+                text-align: center;
+                padding: 1rem;
+            }
+
+            .contact-form {
+                padding: 1rem;
+            }
+
+            .contact-form input,
+            .contact-form textarea {
+                padding: 0.75rem;
+                font-size: 0.95rem;
+            }
+
+            .contact-form button {
+                padding: 0.75rem 1.5rem;
+                font-size: 0.95rem;
+            }
+
+            /* Back to Top Button */
+            .back-to-top {
+                bottom: 1rem;
+                right: 1rem;
+                width: 2.5rem;
+                height: 2.5rem;
+            }
+
+            /* Section Spacing */
+            section {
+                padding: 1.5rem 0.75rem;
+            }
+
+            section h2 {
+                font-size: 1.6rem;
+                margin-bottom: 1rem;
+            }
+
+            /* Typography */
+            h2 {
+                font-size: 1.6rem;
+            }
+
+            h3 {
+                font-size: 1.2rem;
+            }
+
+            p {
+                font-size: 0.95rem;
+                line-height: 1.5;
+            }
+
+            /* Buttons */
+            .btn {
+                padding: 0.75rem 1.25rem;
+                font-size: 0.95rem;
+            }
+
+            /* Social Links */
+            .social-links {
+                justify-content: center;
+                gap: 0.75rem;
+            }
+
+            .social-links a {
+                width: 2.25rem;
+                height: 2.25rem;
+            }
+
+            /* Mobile Navigation */
+            .mobile-nav-link {
+                padding: 0.75rem 1rem;
+                font-size: 1rem;
+            }
+
+            .mobile-contact-btn {
+                margin: 0.75rem 1rem;
+                padding: 0.75rem;
+                font-size: 1rem;
+            }
+
+            .logo-text {
+                font-size: 1.1rem !important;
+                color: #222 !important;
+                font-weight: 700 !important;
+                letter-spacing: 0.5px !important;
+                margin-right: 0 !important;
+                text-shadow: none !important;
+                background: none !important;
+            }
+
+            .logo {
+                justify-content: center !important;
+                width: 100%;
+            }
+        }
+
+        /* Small Mobile Devices */
+        @media (max-width: 480px) {
+            .header {
+                padding: 0.5rem;
+            }
+
+            .logo {
+                max-width: 80px;
+            }
+
+            .logo-text {
+                font-size: 0.8rem !important;
+            }
+
+            .hero h1 {
+                font-size: 1.6rem;
+            }
+
+            .booth-card {
+                margin: 0.25rem;
+            }
+
+            .contact-form input,
+            .contact-form textarea {
+                padding: 0.6rem;
+            }
+
+            .back-to-top {
+                bottom: 0.75rem;
+                right: 0.75rem;
+                width: 2.25rem;
+                height: 2.25rem;
+            }
+
+            section {
+                padding: 1.25rem 0.5rem;
+            }
+        }
+    </style>
+</head>
+<body class="text-gray-800">
+    <!-- Navigation -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center gap-2">
+                <div class="image-container w-10 h-10">
+                    <img src="373633205_3677849595779188_4373545327199839411_n.jpg" alt="PhotoStyle Logo" class="w-full h-full rounded-full object-contain" />
+                </div>
+                <a href="#home" class="logo flex items-center">
+                    <span class="logo-text" style="font-family: 'Montserrat', sans-serif; font-weight: 700; color: #222; letter-spacing: 1px;">PhotoStyle</span>
+                </a>
+            </div>
+            <!-- Desktop Navigation -->
+            <nav class="hidden md:flex items-center space-x-8 rtl:space-x-reverse">
+                <a href="#home" class="nav-link text-gray-800">בית</a>
+                <a href="#gallery" class="nav-link text-gray-800">גלריה</a>
+                <a href="#pricing" class="nav-link text-gray-800">מחירים</a>
+                <a href="#faq" class="nav-link text-gray-800">שאלות נפוצות</a>
+                <a href="#contact" class="contact-nav-btn text-white px-6 py-2.5 rounded-full font-medium">צור קשר</a>
+            </nav>
+
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-button" class="md:hidden text-gray-800 p-2 rounded-lg hover:bg-gray-100 transition">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="md:hidden hidden mobile-menu">
+            <div class="px-4 py-3 space-y-2">
+                <a href="#home" class="mobile-nav-link block px-4 py-3 text-gray-800 font-medium">בית</a>
+                <a href="#gallery" class="mobile-nav-link block px-4 py-3 text-gray-800 font-medium">גלריה</a>
+                <a href="#pricing" class="mobile-nav-link block px-4 py-3 text-gray-800 font-medium">מחירים</a>
+                <a href="#faq" class="mobile-nav-link block px-4 py-3 text-gray-800 font-medium">שאלות נפוצות</a>
+                <a href="#contact" class="mobile-contact-btn block px-4 py-3 text-white rounded-lg text-center font-medium mt-4">צור קשר</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-gradient text-white py-20">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-10 md:mb-0">
+                <h1 class="text-4xl md:text-5xl font-bold mb-6">החוויה הכי מצחיקה והכי מושלמת באירוע שלכם!</h1>
+                <p class="text-xl mb-8">פוטובוקס מודרני עם מגוון רחב של אקססוריז, רקעים ואפשרויות שיתוף מיידי - להנאה מרבית של כל האורחים</p>
+                <div class="flex flex-wrap gap-2 mb-8">
+                    <span class="bg-white bg-opacity-20 px-4 py-2 rounded-full text-sm">אטרקציות והפקת אירועים</span>
+                    <span class="bg-white bg-opacity-20 px-4 py-2 rounded-full text-sm">חתונות</span>
+                    <span class="bg-white bg-opacity-20 px-4 py-2 rounded-full text-sm">אירועי חברה</span>
+                    <span class="bg-white bg-opacity-20 px-4 py-2 rounded-full text-sm">בר/ת מצווה</span>
+                </div>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="#contact" class="bg-white text-pink-600 px-8 py-3 rounded-full font-bold text-center hover:bg-gray-100 transition">הזמינו עכשיו</a>
+                    <a href="#booths" class="bg-transparent border-2 border-white px-8 py-3 rounded-full font-bold text-center hover:bg-white hover:text-pink-600 transition">גלו את העמדות שלנו</a>
+                </div>
+            </div>
+            <div class="md:w-1/2">
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="bg-white rounded-2xl overflow-hidden shadow-xl">
+                        <img src="https://images.unsplash.com/photo-1527529482837-4698179dc6ce?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="People enjoying photobooth" class="w-full h-full object-cover">
+                    </div>
+                    <div class="flex flex-col gap-4">
+                        <div class="bg-white rounded-2xl overflow-hidden shadow-xl">
+                            <img src="https://images.unsplash.com/photo-1530103862676-de8c9debad1d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Couple in photobooth" class="w-full h-full object-cover">
+                        </div>
+                        <div class="bg-white rounded-2xl overflow-hidden shadow-xl">
+                            <img src="https://images.unsplash.com/photo-1528977695568-bd5e5069eb61?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Friends with photobooth props" class="w-full h-full object-cover">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Booths Section -->
+    <section id="booths" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-4 text-center">העמדות שלנו</h2>
+            <p class="text-center text-gray-600 mb-12 max-w-2xl mx-auto">בחרו את העמדה המתאימה ביותר לאירוע שלכם מתוך המבחר המוביל בשוק</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Booth 1 -->
+                <div class="booth-card rounded-xl overflow-hidden shadow-lg relative">
+                    <div class="h-64 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1533174076620-6e8c8c5eb6dd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Open-Air Booth" class="w-full h-full object-cover">
+                    </div>
+                    <div class="booth-overlay absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0">
+                        <span class="text-white font-bold text-lg">פתוחה</span>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">עמדה פתוחה</h3>
+                        <p class="text-gray-600 mb-4">עמדה פתוחה עם רקעים מתחלפים, מושלם לאירועים חברתיים עם מרחב למספר אנשים</p>
+                        <div class="mt-4">
+                            <span class="font-bold text-lg text-pink-600">1,200 ש״ח</span>
+                            <span class="text-sm text-gray-500 mr-2">מינימום 3 שעות</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Booth 2 -->
+                <div class="booth-card rounded-xl overflow-hidden shadow-lg relative">
+                    <div class="h-64 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1595891233211-fc8f36e8d0bb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Enclosed Booth" class="w-full h-full object-cover">
+                    </div>
+                    <div class="booth-overlay absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0">
+                        <span class="text-white font-bold text-lg">סגורה</span>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">עמדה סגורה</h3>
+                        <p class="text-gray-600 mb-4">עמדה מרווחת ופרטית עם אפקטים שונים לאווירה מושלמת ומרגשת</p>
+                        <div class="mt-4">
+                            <span class="font-bold text-lg text-pink-600">1,500 ש״ח</span>
+                            <span class="text-sm text-gray-500 mr-2">מינימום 3 שעות</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Booth 3 -->
+                <div class="booth-card rounded-xl overflow-hidden shadow-lg relative">
+                    <div class="h-64 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1518895949257-7621c3c786d7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="360 Booth" class="w-full h-full object-cover">
+                    </div>
+                    <div class="booth-overlay absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0">
+                        <span class="text-white font-bold text-lg">360°</span>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">עמדת 360°</h3>
+                        <p class="text-gray-600 mb-4">הפתעת האירוע! עמדה שמצלמת סרטון קצר ברוחב 360 מעלות עם אפשרות שיתוף מיידי</p>
+                        <div class="mt-4">
+                            <span class="font-bold text-lg text-pink-600">1,800 ש״ח</span>
+                            <span class="text-sm text-gray-500 mr-2">מינימום 3 שעות</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Booth 4 -->
+                <div class="booth-card rounded-xl overflow-hidden shadow-lg relative">
+                    <div class="h-64 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1562428309-f97e33239ba7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Mirror Booth" class="w-full h-full object-cover">
+                    </div>
+                    <div class="booth-overlay absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0">
+                        <span class="text-white font-bold text-lg">מראה</span>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">עמדת מראה</h3>
+                        <p class="text-gray-600 mb-4">עמדה עצמאית במראה חכמה עם ממשק מגע מתקדם. מושלם לאירועים יוקרתיים</p>
+                        <div class="mt-4">
+                            <span class="font-bold text-lg text-pink-600">2,200 ש״ח</span>
+                            <span class="text-sm text-gray-500 mr-2">מינימום 3 שעות</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Photobooth Preview Gallery -->
+            <div class="mt-12">
+                <h3 class="text-2xl font-bold mb-6 text-center">תמונות מהפוטובוקס שלנו</h3>
+                <div class="flex flex-col md:flex-row justify-center items-center gap-8">
+                    <img src="465746666_17906579592052605_8814564622261822166_n.jpg" alt="תמונה מהפוטובוקס" class="w-full md:w-1/3 rounded-xl shadow-lg object-cover" style="max-width:350px; max-height:350px;" />
+                    <img src="447968835_17886912276052605_6606641805471534445_n.jpg" alt="תמונה מהפוטובוקס" class="w-full md:w-1/3 rounded-xl shadow-lg object-cover" style="max-width:350px; max-height:350px;" />
+                </div>
+            </div>
+            <!-- Sunglasses Stand Gallery -->
+            <div class="mt-12">
+                <h3 class="text-2xl font-bold mb-6 text-center">עמדת משקפיים - דוגמאות מהאירועים שלנו</h3>
+                <div class="flex flex-col md:flex-row justify-center items-center gap-8">
+                    <img src="469728065_17911261755052605_1369230262442312767_n.jpg" alt="עמדת משקפיים - דוגמה 1" class="w-full md:w-1/3 rounded-xl shadow-lg object-cover" style="max-width:350px; max-height:350px;" />
+                    <img src="487848350_17925099273052605_7385162135366785480_n.jpg" alt="עמדת משקפיים - דוגמה 2" class="w-full md:w-1/3 rounded-xl shadow-lg object-cover" style="max-width:350px; max-height:350px;" />
+                </div>
+            </div>
+            <!-- Booth Add-ons -->
+            <div class="mt-16 bg-gray-50 rounded-xl p-8">
+                <h3 class="text-2xl font-bold mb-6 text-center">שירותים נוספים</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="flex items-start">
+                        <div class="bg-pink-100 p-3 rounded-full mr-4">
+                            <i class="fas fa-camera text-pink-600 text-xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold mb-1">עמדת הצילום המתקדמת</h4>
+                            <p class="text-gray-600">העמדה המתקדמת ביותר בישראל עם טכנולוגיה חדשנית</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start">
+                        <div class="bg-pink-100 p-3 rounded-full mr-4">
+                            <i class="fas fa-glasses text-pink-600 text-xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold mb-1">עמדת משקפיים לאפטר</h4>
+                            <p class="text-gray-600">מגוון משקפיים מצחיקים ומיוחדים לאירוע שלכם</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start">
+                        <div class="bg-pink-100 p-3 rounded-full mr-4">
+                            <i class="fas fa-lightbulb text-pink-600 text-xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold mb-1">תאורת גב במה</h4>
+                            <p class="text-gray-600">תאורה מקצועית שתאיר את האירוע שלכם בצורה מושלמת</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start">
+                        <div class="bg-pink-100 p-3 rounded-full mr-4">
+                            <i class="fas fa-smoke text-pink-600 text-xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold mb-1">תותחי עשן לבמה</h4>
+                            <p class="text-gray-600">אפקטים מרשימים שיוסיפו לאווירה של האירוע</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start">
+                        <div class="bg-pink-100 p-3 rounded-full mr-4">
+                            <i class="fas fa-bolt text-pink-600 text-xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold mb-1">לייזרים לבמה</h4>
+                            <p class="text-gray-600">אפקטים מיוחדים עם קרני לייזר מרשימות</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start">
+                        <div class="bg-pink-100 p-3 rounded-full mr-4">
+                            <i class="fas fa-film text-pink-600 text-xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold mb-1">חבילות סלואו</h4>
+                            <p class="text-gray-600">צילום וידאו איטי לאירועים מיוחדים</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start">
+                        <div class="bg-pink-100 p-3 rounded-full mr-4">
+                            <i class="fas fa-fire text-pink-600 text-xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold mb-1">זיקוקים קרים</h4>
+                            <p class="text-gray-600">זיקוקים קרים לחופה או סלואו - אפקט מרשים ובטוח</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section id="how-it-works" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-4 text-center">איך זה עובד</h2>
+            <p class="text-center text-gray-600 mb-12 max-w-2xl mx-auto">תהליך פשוט ונוח להשגת העמדה המושלמת לאירוע שלכם</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div class="text-center">
+                    <div class="bg-pink-600 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 text-white text-2xl">1</div>
+                    <h3 class="font-bold mb-2">בחירת העמדה</h3>
+                    <p class="text-gray-600">בחרו את העמדה הרצויה מתוך המגוון שלנו והתאימו אותה לצרכים שלכם עם האפשרויות הנוספות</p>
+                </div>
+                <div class="text-center">
+                    <div class="bg-pink-600 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 text-white text-2xl">2</div>
+                    <h3 class="font-bold mb-2">התאמה אישית</h3>
+                    <p class="text-gray-600">בחרו את סגנון ההדפסה, הוסיפו לוגו או שם זוג לחוויה אישית יותר</p>
+                </div>
+                <div class="text-center">
+                    <div class="bg-pink-600 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 text-white text-2xl">3</div>
+                    <h3 class="font-bold mb-2">יום האירוע</h3>
+                    <p class="text-gray-600">אנו מגיעים עם העמדה מרובעת לפני האירוע ומוודאים שהכל פועל בצורה מושלמת</p>
+                </div>
+                <div class="text-center">
+                    <div class="bg-pink-600 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 text-white text-2xl">4</div>
+                    <h3 class="font-bold mb-2">שיתוף חוויות</h3>
+                    <p class="text-gray-600">תמונות האירוע נשלחות ישירות לכם וניתן לשתף אותן במגוון פלטפורמות דיגיטליות</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-4 text-center">מחירים וחבילות</h2>
+            <p class="text-center text-gray-600 mb-12 max-w-2xl mx-auto">מגוון חבילות במחירים נוחים המותאמים לכל סוגי האירועים</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+                <!-- Basic Package -->
+                <div class="border rounded-xl shadow-lg hover:shadow-xl transition-shadow">
+                    <div class="bg-pink-100 py-6 px-4 rounded-t-xl">
+                        <h3 class="text-xl font-bold text-center">חבילה בסיסית</h3>
+                        <div class="text-center mt-2">
+                            <span class="text-4xl font-bold">1,200</span>
+                            <span class="text-lg">ש״ח</span>
+                        </div>
+                        <p class="text-center text-gray-600 mt-1">למינימום 3 שעות</p>
+                    </div>
+                    <div class="p-6">
+                        <ul class="space-y-3">
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                <span>עמדת צילום פתוחה</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                <span>2 רקעים לבחירה</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                <span>ערכת אקססוריז בסיסית</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                <span>הדפסת 2 עותקים לכל תמונה</span>
+                            </li>
+                            <li class="flex items-center text-gray-400">
+                                <i class="fas fa-times text-red-400 mr-2"></i>
+                                <span class="line-through">אלבום אירוע</span>
+                            </li>
+                            <li class="flex items-center text-gray-400">
+                                <i class="fas fa-times text-red-400 mr-2"></i>
+                                <span class="line-through">שיתוף מיידי</span>
+                            </li>
+                        </ul>
+                        <a href="https://wa.me/message/ATRK4QCNQX6OH1?text=שלום, אני מעוניין בחבילת בסיס:%0A%0A- עמדה פתוחה%0A- 3 שעות שירות%0A- עד 100 תמונות%0A- הדפסה מיידית%0A%0Aמחיר: ₪1,500" class="block mt-6 bg-pink-600 text-white py-3 rounded-lg text-center font-bold hover:bg-pink-700 transition" target="_blank">הזמינו עכשיו</a>
+                    </div>
+                </div>
+                
+                <!-- Premium Package -->
+                <div class="border rounded-xl shadow-lg hover:shadow-xl transition-shadow transform scale-105">
+                    <div class="bg-pink-600 text-white py-6 px-4 rounded-t-xl">
+                        <h3 class="text-xl font-bold text-center">חבילת פרמיום</h3>
+                        <div class="text-center mt-2">
+                            <span class="text-4xl font-bold">1,800</span>
+                            <span class="text-lg">ש״ח</span>
+                        </div>
+                        <p class="text-center opacity-90 mt-1">למינימום 3 שעות</p>
+                    </div>
+                    <div class="p-6">
+                        <ul class="space-y-3">
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                <span>עמדת צילום סגורה או 360°</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                <span>5 רקעים מתחלפים לבחירה</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                <span>ערכת אקססוריז מורחבת</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                <span>הדפסת 4 עותקים לכל תמונה</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                <span>אלבום אירוע אישי</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                <span>שיתוף מיידי בוואטסאפ</span>
+                            </li>
+                        </ul>
+                        <a href="https://wa.me/message/ATRK4QCNQX6OH1?text=שלום, אני מעוניין בחבילת פרימיום:%0A%0A- עמדה סגורה%0A- 4 שעות שירות%0A- עד 200 תמונות%0A- הדפסה מיידית%0A- אלבום דיגיטלי%0A%0Aמחיר: ₪2,500" class="block mt-6 bg-pink-600 text-white py-3 rounded-lg text-center font-bold hover:bg-pink-700 transition" target="_blank">הזמינו עכשיו</a>
+                    </div>
+                </div>
+                
+                <!-- VIP Package -->
+                <div class="border rounded-xl shadow-lg hover:shadow-xl transition-shadow">
+                    <div class="bg-pink-100 py-6 px-4 rounded-t-xl">
+                        <h3 class="text-xl font-bold text-center">חבילת VIP</h3>
+                        <div class="text-center mt-2">
+                            <span class="text-4xl font-bold">2,200</span>
+                            <span class="text-lg">ש״ח</span>
+                        </div>
+                        <p class="text-center text-gray-600 mt-1">למינימום 4 שעות</p>
+                    </div>
+                    <div class="p-6">
+                        <ul class="space-y-3">
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                <span>עמדת מראה חכמה או מודל פרימיום</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                <span>רקעים לבחירה + התאמה אישית</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                <span>ערכת אקססוריז מלאה</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                <span>הדפסות ללא הגבלה</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                <span>אלבום אירוע יוקרתי</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                <span>שיתוף בכל הרשתות החברתיות</span>
+                            </li>
+                        </ul>
+                        <a href="https://wa.me/message/ATRK4QCNQX6OH1?text=שלום, אני מעוניין בחבילת VIP:%0A%0A- עמדת 360°%0A- 5 שעות שירות%0A- תמונות ללא הגבלה%0A- הדפסה מיידית%0A- אלבום דיגיטלי%0A- אפקטים מיוחדים%0A%0Aמחיר: ₪3,500" class="block mt-6 bg-pink-600 text-white py-3 rounded-lg text-center font-bold hover:bg-pink-700 transition" target="_blank">הזמינו עכשיו</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="contact-button-container">
+                <a href="https://wa.me/message/ATRK4QCNQX6OH1" class="contact-button" target="_blank">
+                    <i class="fab fa-whatsapp"></i>
+                    צרו קשר להצעת מחיר מותאמת
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-4 text-center">גלריית תמונות</h2>
+            <p class="text-center text-gray-600 mb-12 max-w-2xl mx-auto">צפו בתמונות מהאירועים האחרונים שלנו</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Gallery Item 1 -->
+                <div class="gallery-item">
+                    <img src="465746666_17906579592052605_8814564622261822166_n.jpg" alt="תמונה מהפוטובוקס" class="w-full h-80 object-cover">
+                    <div class="gallery-overlay">
+                        <h3 class="gallery-title text-xl font-bold mb-2">פוטובוקס</h3>
+                        <p class="text-sm opacity-0 transition-opacity duration-300 group-hover:opacity-100">חווית צילום מושלמת לאירוע שלכם</p>
+                    </div>
+                </div>
+                
+                <!-- Gallery Item 2 -->
+                <div class="gallery-item">
+                    <img src="447968835_17886912276052605_6606641805471534445_n.jpg" alt="תמונה מהפוטובוקס" class="w-full h-80 object-cover">
+                    <div class="gallery-overlay">
+                        <h3 class="gallery-title text-xl font-bold mb-2">פוטובוקס</h3>
+                        <p class="text-sm opacity-0 transition-opacity duration-300 group-hover:opacity-100">תמונות איכותיות עם אפקטים מיוחדים</p>
+                    </div>
+                </div>
+                
+                <!-- Gallery Item 3 -->
+                <div class="gallery-item">
+                    <img src="469728065_17911261755052605_1369230262442312767_n.jpg" alt="עמדת משקפיים" class="w-full h-80 object-cover">
+                    <div class="gallery-overlay">
+                        <h3 class="gallery-title text-xl font-bold mb-2">עמדת משקפיים</h3>
+                        <p class="text-sm opacity-0 transition-opacity duration-300 group-hover:opacity-100">מגוון משקפיים מצחיקים לאירוע שלכם</p>
+                    </div>
+                </div>
+                
+                <!-- Gallery Item 4 -->
+                <div class="gallery-item">
+                    <img src="487848350_17925099273052605_7385162135366785480_n.jpg" alt="עמדת משקפיים" class="w-full h-80 object-cover">
+                    <div class="gallery-overlay">
+                        <h3 class="gallery-title text-xl font-bold mb-2">עמדת משקפיים</h3>
+                        <p class="text-sm opacity-0 transition-opacity duration-300 group-hover:opacity-100">חוויה מצחיקה ומהנה לכל האורחים</p>
+                    </div>
+                </div>
+                
+                <!-- Gallery Item 5 -->
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1583939003579-730e3918a45a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="חתונה" class="w-full h-80 object-cover">
+                    <div class="gallery-overlay">
+                        <h3 class="gallery-title text-xl font-bold mb-2">חתונה</h3>
+                        <p class="text-sm opacity-0 transition-opacity duration-300 group-hover:opacity-100">זיכרונות מיוחדים ליום המאושר שלכם</p>
+                    </div>
+                </div>
+                
+                <!-- Gallery Item 6 -->
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1521737451536-00a86f630f3f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="אירוע חברה" class="w-full h-80 object-cover">
+                    <div class="gallery-overlay">
+                        <h3 class="gallery-title text-xl font-bold mb-2">אירוע חברה</h3>
+                        <p class="text-sm opacity-0 transition-opacity duration-300 group-hover:opacity-100">אווירה מיוחדת לאירועי חברה</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <a href="https://www.instagram.com/photostyle.il/" target="_blank" class="inline-block bg-pink-600 text-white px-8 py-3 rounded-full font-bold hover:bg-pink-700 transition">
+                    צפו בעוד תמונות באינסטגרם
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-4 text-center">שאלות נפוצות</h2>
+            <p class="text-center text-gray-600 mb-12 max-w-2xl mx-auto">כל התשובות לשאלות שמעניינות אתכם</p>
+            
+            <div class="max-w-3xl mx-auto space-y-6">
+                <!-- FAQ Item 1 -->
+                <div class="bg-white rounded-xl p-6 shadow-md">
+                    <h3 class="text-xl font-bold mb-2">כמה זמן לוקח להקים את העמדה?</h3>
+                    <p class="text-gray-600">הקמת העמדה אורכת כ-45 דקות. אנחנו מגיעים כשעה לפני תחילת האירוע כדי להבטיח שהכל יהיה מוכן בזמן.</p>
+                </div>
+                
+                <!-- FAQ Item 2 -->
+                <div class="bg-white rounded-xl p-6 shadow-md">
+                    <h3 class="text-xl font-bold mb-2">האם צריך מקור חשמל?</h3>
+                    <p class="text-gray-600">כן, העמדה דורשת חיבור לחשמל. אנחנו מגיעים עם כבלים ארוכים ומאריכים, אבל חשוב שיהיה נקודת חשמל קרובה.</p>
+                </div>
+                
+                <!-- FAQ Item 3 -->
+                <div class="bg-white rounded-xl p-6 shadow-md">
+                    <h3 class="text-xl font-bold mb-2">איך מקבלים את התמונות?</h3>
+                    <p class="text-gray-600">התמונות נשלחות אוטומטית לוואטסאפ של האורחים בזמן אמת. בנוסף, כל התמונות נשמרות בגלריה מקוונת זמינה למשך 30 יום.</p>
+                </div>
+                
+                <!-- FAQ Item 4 -->
+                <div class="bg-white rounded-xl p-6 shadow-md">
+                    <h3 class="text-xl font-bold mb-2">האם יש צורך במלווה מקצועי?</h3>
+                    <p class="text-gray-600">כל העמדות שלנו מגיעות עם מלווה מקצועי שמסביר לאורחים איך להשתמש בעמדה ומטפל בכל התקלות האפשריות.</p>
+                </div>
+                
+                <!-- FAQ Item 5 -->
+                <div class="bg-white rounded-xl p-6 shadow-md">
+                    <h3 class="text-xl font-bold mb-2">האם אפשר להתאים את העמדה לאירוע שלנו?</h3>
+                    <p class="text-gray-600">בהחלט! אנחנו מציעים התאמה אישית של רקעים, מסגרות, אקססוריז ואפילו לוגו מותאם לאירוע שלכם.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-4 text-center">צור קשר</h2>
+            <p class="text-center text-gray-600 mb-12 max-w-2xl mx-auto">נשמח לשמוע ממך! צור איתנו קשר בכל דרך שנוחה לך</p>
+            
+            <div class="max-w-4xl mx-auto">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <!-- Contact Information -->
+                    <div class="bg-white p-8 rounded-xl shadow-lg">
+                        <h3 class="text-xl font-bold mb-6 text-center">פרטי התקשרות</h3>
+                        
+                        <div class="space-y-6">
+                            <!-- Phone -->
+                            <div class="flex items-center justify-center space-x-4 rtl:space-x-reverse">
+                                <div class="w-12 h-12 bg-pink-100 rounded-full flex items-center justify-center">
+                                    <i class="fas fa-phone text-pink-600 text-xl"></i>
+                                </div>
+                                <div class="text-right">
+                                    <p class="text-gray-600 mb-1">טלפון</p>
+                                    <a href="tel:+972504258458" class="text-lg font-semibold text-gray-900 hover:text-pink-600 transition">
+                                        +972 50-425-8458
+                                    </a>
+                                </div>
+                            </div>
+
+                            <!-- Email -->
+                            <div class="flex items-center justify-center space-x-4 rtl:space-x-reverse">
+                                <div class="w-12 h-12 bg-pink-100 rounded-full flex items-center justify-center">
+                                    <i class="fas fa-envelope text-pink-600 text-xl"></i>
+                                </div>
+                                <div class="text-right">
+                                    <p class="text-gray-600 mb-1">אימייל</p>
+                                    <a href="mailto:info@photostyle.co.il" class="text-lg font-semibold text-gray-900 hover:text-pink-600 transition">
+                                        info@photostyle.co.il
+                                    </a>
+                                </div>
+                            </div>
+
+                            <!-- Location -->
+                            <div class="flex items-center justify-center space-x-4 rtl:space-x-reverse">
+                                <div class="w-12 h-12 bg-pink-100 rounded-full flex items-center justify-center">
+                                    <i class="fas fa-map-marker-alt text-pink-600 text-xl"></i>
+                                </div>
+                                <div class="text-right">
+                                    <p class="text-gray-600 mb-1">כתובת</p>
+                                    <p class="text-lg font-semibold text-gray-900">תל אביב, ישראל</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- WhatsApp Contact -->
+                    <div class="bg-white p-8 rounded-xl shadow-lg flex flex-col justify-center items-center">
+                        <div class="text-center mb-6">
+                            <h3 class="text-xl font-bold mb-4">צור קשר בוואטסאפ</h3>
+                            <p class="text-gray-600 mb-6">להצעת מחיר מותאמת אישית</p>
+                        </div>
+                        
+                        <a href="https://wa.me/972504258458" target="_blank" class="inline-flex items-center justify-center space-x-2 rtl:space-x-reverse bg-green-500 text-white px-8 py-4 rounded-full font-bold hover:bg-green-600 transition transform hover:scale-105">
+                            <i class="fab fa-whatsapp text-2xl"></i>
+                            <span>צור קשר בוואטסאפ</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div class="flex flex-col items-start">
+                    <img src="373633205_3677849595779188_4373545327199839411_n.jpg" alt="PhotoStyle Logo" class="w-15 h-15 mb-4 rounded-full object-contain" style="width:60px;height:60px;" />
+                    <h3 class="text-xl font-bold mb-4">PhotoStyle</h3>
+                    <p>החוויה הצילומית המושלמת לאירוע שלכם. מגוון עמדות צילום עם אפשרויות מתקדמות להנאה מרבית.</p>
+                    <div class="flex space-x-4 mt-4">
+                        <a href="#" class="text-white hover:text-pink-400"><i class="fab fa-facebook-f text-xl"></i></a>
+                        <a href="https://www.instagram.com/photostyle.il/" class="text-white hover:text-pink-400"><i class="fab fa-instagram text-xl"></i></a>
+                        <a href="https://wa.me/message/ATRK4QCNQX6OH1" class="text-white hover:text-pink-400"><i class="fab fa-whatsapp text-xl"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">קישורים</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#home" class="hover:text-pink-400">דף הבית</a></li>
+                        <li><a href="#booths" class="hover:text-pink-400">העמדות שלנו</a></li>
+                        <li><a href="#gallery" class="hover:text-pink-400">גלריה</a></li>
+                        <li><a href="#how-it-works" class="hover:text-pink-400">איך זה עובד</a></li>
+                        <li><a href="#pricing" class="hover:text-pink-400">מחירים</a></li>
+                        <li><a href="#faq" class="hover:text-pink-400">שאלות נפוצות</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">צור קשר</h4>
+                    <ul class="space-y-2">
+                        <li class="flex items-center">
+                            <i class="fas fa-phone mr-2 text-pink-400"></i>
+                            <span>054-1234567</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope mr-2 text-pink-400"></i>
+                            <span>info@photostyle.co.il</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-map-marker-alt mr-2 text-pink-400"></i>
+                            <span>תל אביב, ישראל</span>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">אזורי שירות</h4>
+                    <p>אנו מספקים שירות בכל רחבי הארץ: תל אביב והסביבה, ירושלים, חיפה, באר שבע והצפון.</p>
+                    <p class="mt-2 text-sm">ניתן לקבל הצעת מחיר גם לישובים נוספים</p>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400 text-sm">© 2023 PhotoStyle. כל הזכויות שמורות.</p>
+                <div class="flex space-x-4 space-x-reverse mt-4 md:mt-0">
+                    <a href="#" class="text-gray-400 hover:text-white text-sm">תנאי שימוש</a>
+                    <a href="#" class="text-gray-400 hover:text-white text-sm">מדיניות פרטיות</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top" aria-label="חזרה למעלה">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Initialize all required elements
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+            const backToTopButton = document.getElementById('backToTop');
+            const sections = document.querySelectorAll('section[id]');
+            const navLinks = document.querySelectorAll('.nav-link, .mobile-nav-link');
+            const images = document.querySelectorAll('img');
+
+            // Mobile menu functionality with improved touch handling
+            if (mobileMenuButton && mobileMenu) {
+                let touchStartY = 0;
+                let touchEndY = 0;
+
+                mobileMenuButton.addEventListener('click', () => {
+                    mobileMenu.classList.toggle('show');
+                    mobileMenu.classList.toggle('hidden');
+                    document.body.style.overflow = mobileMenu.classList.contains('show') ? 'hidden' : '';
+                });
+
+                // Handle swipe to close
+                mobileMenu.addEventListener('touchstart', (e) => {
+                    touchStartY = e.touches[0].clientY;
+                });
+
+                mobileMenu.addEventListener('touchmove', (e) => {
+                    touchEndY = e.touches[0].clientY;
+                });
+
+                mobileMenu.addEventListener('touchend', () => {
+                    const swipeDistance = touchEndY - touchStartY;
+                    if (swipeDistance > 100) { // Swipe down threshold
+                        mobileMenu.classList.remove('show');
+                        mobileMenu.classList.add('hidden');
+                        document.body.style.overflow = '';
+                    }
+                });
+            }
+
+            // Navigation active state
+            function setActiveLink() {
+                let current = '';
+                sections.forEach(section => {
+                    const sectionTop = section.offsetTop;
+                    const sectionHeight = section.clientHeight;
+                    if (window.scrollY >= (sectionTop - 200)) {
+                        current = section.getAttribute('id');
+                    }
+                });
+
+                navLinks.forEach(link => {
+                    link.classList.remove('active');
+                    if (link.getAttribute('href').substring(1) === current) {
+                        link.classList.add('active');
+                    }
+                });
+            }
+
+            window.addEventListener('scroll', setActiveLink);
+            setActiveLink();
+
+            // Smooth scrolling
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                        // Close mobile menu if open
+                        if (mobileMenu && !mobileMenu.classList.contains('hidden')) {
+                            mobileMenu.classList.remove('show');
+                            setTimeout(() => {
+                                mobileMenu.classList.add('hidden');
+                            }, 300);
+                        }
+                    }
+                });
+            });
+
+            // Back to top button
+            window.addEventListener('scroll', () => {
+                if (window.pageYOffset > 300) {
+                    backToTopButton.classList.add('visible');
+                } else {
+                    backToTopButton.classList.remove('visible');
+                }
+            });
+
+            backToTopButton.addEventListener('click', () => {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            });
+
+            // Image loading
+            images.forEach(img => {
+                img.classList.add('image-loading');
+                img.onload = function() {
+                    this.classList.remove('image-loading');
+                };
+                img.onerror = function() {
+                    this.classList.remove('image-loading');
+                    this.classList.add('error');
+                };
+            });
+
+            // Section transitions
+            const observerOptions = {
+                root: null,
+                rootMargin: '0px',
+                threshold: 0.1
+            };
+
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, observerOptions);
+
+            sections.forEach(section => {
+                section.classList.add('section');
+                observer.observe(section);
+            });
+        });
+    </script>
+</body>
+</html>
